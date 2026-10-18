@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju Kumar | DARK WHISPERS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 25px 10px;
+            background: #190000;
+            border-bottom: 2px solid #e50914;
+        }
+        h1 {
+            color: #ff2020;
+            font-size: 36px;
+        }
+        .hero {
+            padding: 70px 20px;
+        }
+        .hero h2 {
+            font-size: 28px;
+        }
+        p {
+            color: #cccccc;
+            line-height: 1.7;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #e50914;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        footer {
+            padding: 20px;
+            background: #151515;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DARK WHISPERS</h1>
+    <p>Enter the World of Horror & Mystery</p>
+</header>
+
+<section class="hero">
+    <h2>Welcome to My Horror World</h2>
+    <p>
+        Discover terrifying horror stories, mysterious incidents,
+        haunted mansions and paranormal mysteries.
+    </p>
+    <a class="button"
+       href="https://www.youtube.com/"
+       target="_blank">
+       Explore Horror
+    </a>
+</section>
+
+<footer>
+    <p>Created by Sanju Kumar</p>
+    <p>© 2026 DARK WHISPERS</p>
+</footer>
+
+</body>
+</html>
