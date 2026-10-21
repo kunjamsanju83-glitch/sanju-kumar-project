@@ -1,76 +1,484 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanju Kumar | DARK WHISPERS</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0b0b0b;
-            color: white;
-            text-align: center;
-        }
-        header {
-            padding: 25px 10px;
-            background: #190000;
-            border-bottom: 2px solid #e50914;
-        }
-        h1 {
-            color: #ff2020;
-            font-size: 36px;
-        }
-        .hero {
-            padding: 70px 20px;
-        }
-        .hero h2 {
-            font-size: 28px;
-        }
-        p {
-            color: #cccccc;
-            line-height: 1.7;
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #e50914;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 15px;
-        }
-        footer {
-            padding: 20px;
-            background: #151515;
-            color: #888;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SANJU KUMAR | DARK WHISPERS</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+  line-height: 1.7;
+}
+
+header {
+  background: #160000;
+  border-bottom: 2px solid #ff2020;
+  padding: 22px 12px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ff2525;
+  margin: 0;
+  font-size: 27px;
+}
+
+header p {
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 8px;
+  background: #111;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: #252525;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 18px;
+  background: linear-gradient(180deg, #240000, #080808);
+}
+
+.hero h2 {
+  color: #ff3030;
+  font-size: 30px;
+}
+
+.hero p {
+  color: #ddd;
+  max-width: 650px;
+  margin: auto;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px 14px;
+}
+
+.card {
+  background: #151515;
+  border: 1px solid #393939;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h2, h3 {
+  color: #ff3535;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  color: #eee;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  background: #080808;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button, .btn {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  padding: 12px 17px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+button:hover, .btn:hover {
+  background: #ff3030;
+}
+
+.output {
+  background: #080808;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 16px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #eee;
+  min-height: 45px;
+}
+
+.small {
+  color: #aaa;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 12px;
+  background: #151515;
+  border-top: 2px solid #ff2020;
+  color: #bbb;
+}
+
+footer a {
+  color: #ff4444;
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>DARK WHISPERS</h1>
-    <p>Enter the World of Horror & Mystery</p>
+  <h1>👻 SANJU KUMAR</h1>
+  <p>DARK WHISPERS — Horror Stories & AI Tools</p>
 </header>
 
-<section class="hero">
-    <h2>Welcome to My Horror World</h2>
-    <p>
-        Discover terrifying horror stories, mysterious incidents,
-        haunted mansions and paranormal mysteries.
-    </p>
-    <a class="button"
-       href="https://www.youtube.com/"
-       target="_blank">
-       Explore Horror
-    </a>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#story">Horror Story</a>
+  <a href="#video">Video Prompt</a>
+  <a href="#image">Image Prompt</a>
+  <a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>WELCOME TO THE WORLD OF HORROR</h2>
+
+  <p>
+    अंधेरी रातें, रहस्यमयी घटनाएँ और डरावनी कहानियाँ!
+    अपनी अगली हॉरर कहानी और वीडियो के लिए आइडिया तैयार करें।
+  </p>
+
+  <a href="#story" class="btn">कहानी बनाएँ 👻</a>
 </section>
 
+<main class="container">
+
+  <section class="card" id="story">
+    <h2>👻 Horror Story Generator</h2>
+
+    <p>
+      अपनी पसंद चुनें और एक नई हॉरर कहानी का ड्राफ्ट बनाएँ।
+    </p>
+
+    <label for="place">कहानी की जगह</label>
+
+    <select id="place">
+      <option value="एक सुनसान पुराने स्कूल">पुराना स्कूल</option>
+      <option value="एक रहस्यमयी हवेली">भूतिया हवेली</option>
+      <option value="एक सुनसान जंगल">डरावना जंगल</option>
+      <option value="एक पुराने अस्पताल">पुराना अस्पताल</option>
+      <option value="एक अंधेरा होटल">रहस्यमयी होटल</option>
+    </select>
+
+    <label for="character">मुख्य किरदार</label>
+
+    <input id="character"
+      type="text"
+      placeholder="जैसे: रमेश">
+
+    <button onclick="makeStory()">
+      कहानी बनाएँ
+    </button>
+
+    <div id="storyOutput" class="output">
+      आपकी कहानी यहाँ दिखाई देगी।
+    </div>
+
+    <button onclick="copyText('storyOutput')">
+      कहानी कॉपी करें
+    </button>
+
+    <p class="small">
+      यह शुरुआती कहानी का ड्राफ्ट बनाता है।
+      यह किसी बाहरी AI API से जुड़ा नहीं है।
+    </p>
+  </section>
+
+
+  <section class="card" id="video">
+    <h2>🎬 AI Horror Video Prompt</h2>
+
+    <label for="videoPlace">वीडियो की जगह</label>
+
+    <select id="videoPlace">
+      <option value="abandoned haunted school">
+        Haunted School
+      </option>
+
+      <option value="dark haunted hotel">
+        Haunted Hotel
+      </option>
+
+      <option value="foggy haunted forest">
+        Haunted Forest
+      </option>
+
+      <option value="old abandoned mansion">
+        Haunted Mansion
+      </option>
+    </select>
+
+    <label for="videoStyle">वीडियो स्टाइल</label>
+
+    <select id="videoStyle">
+      <option value="cinematic realistic horror">
+        Cinematic Realistic
+      </option>
+
+      <option value="dark supernatural mystery">
+        Supernatural Mystery
+      </option>
+
+      <option value="found footage CCTV horror">
+        CCTV Horror
+      </option>
+    </select>
+
+    <button onclick="makeVideoPrompt()">
+      Video Prompt बनाएँ
+    </button>
+
+    <div id="videoOutput" class="output">
+      आपका वीडियो प्रॉम्प्ट यहाँ दिखाई देगा।
+    </div>
+
+    <button onclick="copyText('videoOutput')">
+      Prompt कॉपी करें
+    </button>
+  </section>
+
+
+  <section class="card" id="image">
+    <h2>🖼️ Horror Image Prompt Generator</h2>
+
+    <label for="imageSubject">तस्वीर में क्या दिखाना है?</label>
+
+    <input id="imageSubject"
+      type="text"
+      placeholder="जैसे: अंधेरे कमरे में रहस्यमयी परछाईं">
+
+    <button onclick="makeImagePrompt()">
+      Image Prompt बनाएँ
+    </button>
+
+    <div id="imageOutput" class="output">
+      आपका इमेज प्रॉम्प्ट यहाँ दिखाई देगा।
+    </div>
+
+    <button onclick="copyText('imageOutput')">
+      Prompt कॉपी करें
+    </button>
+
+    <p class="small">
+      यह प्रॉम्प्ट तैयार करता है, तस्वीर अपने आप जनरेट नहीं करता।
+    </p>
+  </section>
+
+
+  <section class="card" id="about">
+    <h2>❤️ About Sanju Kumar</h2>
+
+    <p>
+      नमस्कार दोस्तों! 🙏
+      Sanju Kumar के हॉरर और रहस्य की दुनिया में आपका स्वागत है।
+      यहाँ आपको डरावनी कहानियों के आइडिया,
+      AI वीडियो प्रॉम्प्ट और हॉरर कंटेंट बनाने में मदद मिलेगी।
+    </p>
+
+    <p>
+      हमारा उद्देश्य मनोरंजक और रहस्यमयी कहानियों
+      के लिए नए आइडिया तैयार करना है।
+    </p>
+
+    <h3>📺 हमारा YouTube चैनल</h3>
+
+    <p>
+      अपने YouTube चैनल का लिंक नीचे जोड़ सकते हैं।
+    </p>
+
+    <a class="btn"
+       href="https://www.youtube.com/"
+       target="_blank"
+       rel="noopener noreferrer">
+      YouTube खोलें
+    </a>
+
+    <p class="small">
+      अभी यह सामान्य YouTube लिंक है।
+      बाद में इसे अपने चैनल के असली लिंक से बदलें।
+    </p>
+  </section>
+
+</main>
+
 <footer>
-    <p>Created by Sanju Kumar</p>
-    <p>© 2026 DARK WHISPERS</p>
+  <p>© 2026 Sanju Kumar | DARK WHISPERS</p>
+  <p>Made with ❤️ for Horror Story Lovers</p>
 </footer>
+
+
+<script>
+function makeStory() {
+  const place = document.getElementById("place").value;
+
+  const inputName =
+    document.getElementById("character").value.trim();
+
+  const character = inputName || "रमेश";
+
+  const openings = [
+    "रात के बारह बजे अचानक एक अजीब आवाज सुनाई दी।",
+    "आधी रात को वहाँ की सारी लाइटें अपने आप बुझ गईं।",
+    "दरवाजे के पीछे से किसी के फुसफुसाने की आवाज आ रही थी।"
+  ];
+
+  const mysteries = [
+    "उसने पीछे मुड़कर देखा, लेकिन वहाँ कोई नहीं था।",
+    "दीवार पर एक परछाईं दिखाई दी, जबकि कमरे में कोई खड़ा नहीं था।",
+    "पुरानी घड़ी अचानक उल्टी दिशा में चलने लगी।"
+  ];
+
+  const endings = [
+    "सुबह होने पर वहाँ सब कुछ सामान्य था, लेकिन मेज पर एक नया संदेश रखा था।",
+    "अगले दिन उस जगह का दरवाजा बंद मिला और अंदर से फिर वही आवाज आने लगी।",
+    "उस रात का रहस्य आज तक अनसुलझा है।"
+  ];
+
+  function pick(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  const story =
+    "शीर्षक: " + place + " का रहस्य\n\n" +
+    "एक रात " + character + " " + place +
+    " के पास पहुँचा। " + pick(openings) + "\n\n" +
+    character + " धीरे-धीरे अंदर गया। " +
+    pick(mysteries) + "\n\n" +
+    "डर के बावजूद उसने रहस्य जानने की कोशिश की। " +
+    pick(endings) + "\n\n" +
+    "समाप्त — या शायद कहानी अभी बाकी है...";
+
+  document.getElementById("storyOutput").textContent = story;
+}
+
+function makeVideoPrompt() {
+  const place = document.getElementById("videoPlace").value;
+  const style = document.getElementById("videoStyle").value;
+
+  const prompt =
+    "Create a " + style + " short film set in a " + place + ". " +
+    "Midnight atmosphere, mysterious shadows, dim practical lighting, " +
+    "slow cinematic camera movement, subtle fog, suspenseful mood, " +
+    "realistic environment, detailed textures, dramatic composition, " +
+    "16:9 landscape, no text, no watermark.";
+
+  document.getElementById("videoOutput").textContent = prompt;
+}
+
+function makeImagePrompt() {
+  const subject =
+    document.getElementById("imageSubject").value.trim();
+
+  if (!subject) {
+    document.getElementById("imageOutput").textContent =
+      "पहले तस्वीर का विषय लिखें।";
+    return;
+  }
+
+  const prompt =
+    "Create a cinematic horror image showing " + subject +
+    ". Dark atmosphere, dramatic shadows, eerie lighting, " +
+    "realistic details, mysterious environment, high contrast, " +
+    "professional horror movie composition, 16:9 landscape, " +
+    "no text, no watermark.";
+
+  document.getElementById("imageOutput").textContent = prompt;
+}
+
+function copyText(id) {
+  const text = document.getElementById(id).textContent;
+
+  if (!text || text.includes("यहाँ दिखाई देगी")) {
+    alert("पहले अपना कंटेंट बनाएँ।");
+    return;
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text)
+      .then(() => alert("कॉपी हो गया!"))
+      .catch(() => fallbackCopy(text));
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  const area = document.createElement("textarea");
+  area.value = text;
+  area.style.position = "fixed";
+  area.style.left = "-9999px";
+
+  document.body.appendChild(area);
+  area.select();
+
+  try {
+    document.execCommand("copy");
+    alert("कॉपी हो गया!");
+  } catch (error) {
+    alert("टेक्स्ट कॉपी नहीं हुआ। इसे दबाकर चुनें और कॉपी करें।");
+  }
+
+  area.remove();
+}
+</script>
 
 </body>
 </html>
